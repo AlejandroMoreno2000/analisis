@@ -1,0 +1,522 @@
+--------------------------------------------------------------------------------
+07.02.2025 - 13:23:41
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=virtualization_identification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 2
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 0.28902316093444824 seconds
+NB (computation): 0.0017046928405761719 seconds
+SVM (computation): 0.1907188892364502 seconds
+transform (size: (492, 1000)): 0.02094125747680664 seconds
+--------------------------------------------------------------------------------
+NB - mean 10:
+               precision    recall  f1-score   support
+
+        orig     0.9184    0.9184    0.9184        49
+ virtualized     0.9200    0.9200    0.9200        50
+
+    accuracy                         0.9192        99
+   macro avg     0.9192    0.9192    0.9192        99
+weighted avg     0.9192    0.9192    0.9192        99
+--------------------------------------------------------------------------------
+07.02.2025 - 13:23:41
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=virtualization_identification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 2
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 0.28902316093444824 seconds
+NB (computation): 0.0017046928405761719 seconds
+SVM (computation): 0.1907188892364502 seconds
+transform (size: (492, 1000)): 0.02094125747680664 seconds
+SVM - mean 10:
+               precision    recall  f1-score   support
+
+        orig     0.9362    0.8980    0.9167        49
+ virtualized     0.9038    0.9400    0.9216        50
+
+    accuracy                         0.9192        99
+   macro avg     0.9200    0.9190    0.9191        99
+weighted avg     0.9198    0.9192    0.9191        99
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+07.02.2025 - 13:59:24
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=executable_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 12
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 44.23016571998596 seconds
+NB (computation): 0.08582258224487305 seconds
+SVM (computation): 134.712162733078 seconds
+transform (size: (2952, 16000)): 0.1453850269317627 seconds
+--------------------------------------------------------------------------------
+NB - mean 2:
+                             precision    recall  f1-score   support
+
+                    base64     0.2857    0.0303    0.0548       132
+                   cat-upx     0.0518    0.0781    0.0623       128
+               compilation     0.0440    0.0374    0.0404       107
+                        cp     0.1579    0.0254    0.0438       118
+                      date     0.1111    0.0076    0.0142       132
+                       dig     0.3103    0.1429    0.1957       126
+                       dir     0.0256    0.0074    0.0115       135
+                      echo     0.0645    0.0315    0.0423       127
+                edit-video     0.0488    0.1197    0.0693       117
+               encodevideo     0.2695    0.2946    0.2815       129
+                       env     0.0364    0.0331    0.0346       121
+          gafgyt-variante1     0.0222    0.0250    0.0235       120
+          gafgyt-variante2     0.1045    0.1148    0.1094       122
+          gafgyt-variante3     0.1478    0.1393    0.1435       122
+          gafgyt-variante4     0.0289    0.0597    0.0389       134
+              gafgyt_1_upx     0.2857    0.1463    0.1935       123
+              gafgyt_2_upx     0.0952    0.0667    0.0784       120
+                  gonnacry     0.6471    0.4167    0.5069       132
+gonnacry-CHACHA20-POLY1305     0.4889    0.1849    0.2683       119
+ gonnacry-Camellia-256-CBC     0.0182    0.0156    0.0168       128
+          gonnacry-DES-CBC     0.0200    0.0161    0.0179       124
+          gonnacry-SM4-CBC     0.5000    0.1630    0.2458       135
+     gonnacry_antianalysis     0.8676    0.4403    0.5842       134
+  gonnacry_camilla_CBC_upx     0.7273    0.2623    0.3855       122
+          gonnacry_flatten     0.6383    0.2273    0.3352       132
+           gonnacry_opaque     0.5517    0.3902    0.4571       123
+            gonnacry_split     0.7500    0.2348    0.3576       115
+              gonnacry_upx     0.6939    0.2656    0.3842       128
+       gonnacry_virtualize     0.6531    0.3107    0.4211       103
+                    ls-upx     0.0198    0.0631    0.0301       111
+                 mirai-dbg     0.1724    0.0820    0.1111       122
+          mirai-variante-1     0.3043    0.1045    0.1556       134
+          mirai-variante-2     0.0635    0.0656    0.0645       122
+          mirai-variante-3     0.2000    0.1083    0.1405       120
+          mirai-variante-4     0.2727    0.0714    0.1132       126
+        mirai_antianalysis     0.1343    0.0789    0.0994       114
+             mirai_dbg_upx     0.2459    0.1316    0.1714       114
+             mirai_flatten     0.1948    0.1154    0.1449       130
+              mirai_opaque     0.3265    0.1143    0.1693       140
+               mirai_split     0.3478    0.0656    0.1103       122
+                 mirai_upx     0.4915    0.2320    0.3152       125
+          mirai_virtualize     0.8571    0.3750    0.5217       128
+                   netstat     0.0837    0.1552    0.1088       116
+                      ping     0.0476    0.0833    0.0606       132
+                 playaudio     0.1115    0.2397    0.1522       121
+              printenv-upx     0.0287    0.1150    0.0459       113
+                    printf     0.0230    0.0323    0.0268       124
+                   pwd-upx     0.0482    0.1290    0.0702       124
+                 takevideo     0.5487    0.5124    0.5299       121
+                 tracerout     0.0625    0.0263    0.0370       114
+         trojan-variante-1     0.4590    0.2121    0.2902       132
+         trojan-variante-2     0.3625    0.2266    0.2788       128
+         trojan-variante-3     0.2000    0.1212    0.1509       132
+         trojan-variante-4     0.0769    0.0560    0.0648       125
+         trojan-variante-5     0.0930    0.0923    0.0927       130
+         trojan-variante-6     0.1822    0.3359    0.2363       128
+              trojan_1_upx     0.2105    0.0640    0.0982       125
+              trojan_2_upx     0.1522    0.0547    0.0805       128
+                   tty-upx     0.0172    0.0320    0.0224       125
+                 uname-upx     0.0142    0.0242    0.0179       124
+                uptime-upx     0.0231    0.1140    0.0385       114
+                      wget     0.1975    0.1333    0.1592       120
+                       who     0.0290    0.0565    0.0384       124
+                   who-upx     0.0217    0.0588    0.0317       136
+
+                  accuracy                         0.1373      7952
+                 macro avg     0.2386    0.1370    0.1593      7952
+              weighted avg     0.2404    0.1373    0.1602      7952
+--------------------------------------------------------------------------------
+07.02.2025 - 14:05:47
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=executable_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 14
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 57.52804136276245 seconds
+NB (computation): 0.08355927467346191 seconds
+SVM (computation): 122.69888162612915 seconds
+transform (size: (3444, 16000)): 0.17026448249816895 seconds
+--------------------------------------------------------------------------------
+SVM - mean 10:
+                             precision    recall  f1-score   support
+
+                    base64     0.7500    0.1154    0.2000        26
+                   cat-upx     0.0625    0.0400    0.0488        25
+               compilation     0.0714    0.0476    0.0571        21
+                        cp     0.4444    0.1739    0.2500        23
+                      date     0.1429    0.0385    0.0606        26
+                       dig     0.2222    0.1600    0.1860        25
+                       dir     0.0000    0.0000    0.0000        27
+                      echo     0.1667    0.0400    0.0645        25
+                edit-video     0.0000    0.0000    0.0000        23
+               encodevideo     0.4706    0.6400    0.5424        25
+                       env     0.0000    0.0000    0.0000        24
+          gafgyt-variante1     0.0000    0.0000    0.0000        24
+          gafgyt-variante2     0.2143    0.1250    0.1579        24
+          gafgyt-variante3     0.1667    0.1250    0.1429        24
+          gafgyt-variante4     0.0952    0.0769    0.0851        26
+              gafgyt_1_upx     0.6111    0.4583    0.5238        24
+              gafgyt_2_upx     0.1000    0.0417    0.0588        24
+                  gonnacry     0.4444    0.9231    0.6000        26
+gonnacry-CHACHA20-POLY1305     0.5172    0.6522    0.5769        23
+ gonnacry-Camellia-256-CBC     0.0000    0.0000    0.0000        25
+          gonnacry-DES-CBC     0.0000    0.0000    0.0000        24
+          gonnacry-SM4-CBC     0.7500    0.2222    0.3429        27
+     gonnacry_antianalysis     0.8519    0.8846    0.8679        26
+  gonnacry_camilla_CBC_upx     0.4146    0.7083    0.5231        24
+          gonnacry_flatten     0.8333    0.5769    0.6818        26
+           gonnacry_opaque     0.5263    0.8333    0.6452        24
+            gonnacry_split     0.4688    0.6522    0.5455        23
+              gonnacry_upx     0.6800    0.6800    0.6800        25
+       gonnacry_virtualize     0.4872    0.9500    0.6441        20
+                    ls-upx     0.1154    0.1364    0.1250        22
+                 mirai-dbg     0.3000    0.2500    0.2727        24
+          mirai-variante-1     0.4444    0.1538    0.2286        26
+          mirai-variante-2     0.2727    0.1250    0.1714        24
+          mirai-variante-3     0.1667    0.0833    0.1111        24
+          mirai-variante-4     0.4706    0.3200    0.3810        25
+        mirai_antianalysis     0.1071    0.1364    0.1200        22
+             mirai_dbg_upx     0.4737    0.4091    0.4390        22
+             mirai_flatten     0.3103    0.3462    0.3273        26
+              mirai_opaque     0.6250    0.3571    0.4545        28
+               mirai_split     0.3846    0.2083    0.2703        24
+                 mirai_upx     0.5588    0.7600    0.6441        25
+          mirai_virtualize     0.6667    0.8800    0.7586        25
+                   netstat     0.3333    0.1739    0.2286        23
+                      ping     0.1250    0.0385    0.0588        26
+                 playaudio     0.3889    0.2917    0.3333        24
+              printenv-upx     0.0476    0.0909    0.0625        22
+                    printf     0.0476    0.0417    0.0444        24
+                   pwd-upx     0.1429    0.1250    0.1333        24
+                 takevideo     0.2017    1.0000    0.3357        24
+                 tracerout     0.2000    0.1364    0.1622        22
+         trojan-variante-1     0.3864    0.6538    0.4857        26
+         trojan-variante-2     0.2812    0.7200    0.4045        25
+         trojan-variante-3     0.2667    0.3077    0.2857        26
+         trojan-variante-4     0.1579    0.1200    0.1364        25
+         trojan-variante-5     0.1852    0.1923    0.1887        26
+         trojan-variante-6     0.3235    0.4400    0.3729        25
+              trojan_1_upx     0.3750    0.1200    0.1818        25
+              trojan_2_upx     0.2000    0.0800    0.1143        25
+                   tty-upx     0.0769    0.0400    0.0526        25
+                 uname-upx     0.0370    0.0417    0.0392        24
+                uptime-upx     0.0000    0.0000    0.0000        22
+                      wget     0.3529    0.5000    0.4138        24
+                       who     0.0476    0.0417    0.0444        24
+                   who-upx     0.1000    0.0370    0.0541        27
+
+                  accuracy                         0.2896      1564
+                 macro avg     0.2916    0.2894    0.2644      1564
+              weighted avg     0.2951    0.2896    0.2658      1564
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+07.02.2025 - 14:30:48
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=novelty_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 2
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 2.2484612464904785 seconds
+NB (computation): 0.015016317367553711 seconds
+SVM (computation): 62.90242266654968 seconds
+transform (size: (492, 30250)): 0.054917335510253906 seconds
+Test NB  (size: (30250, 4)) [0.004323005676269531 seconds]:
+--------------------------------------------------------------------------------
+NB - mean 9:
+               precision    recall  f1-score   support
+
+      benign     0.2160    1.0000    0.3552       722
+      gafgyt     0.3000    0.4200    0.3500       138
+    gonnacry     0.3500    0.7500    0.4774       972
+       mirai     0.3500    0.7500    0.4774       972
+      trojan     1.0000    0.9000    0.9474       555
+
+    accuracy                         0.8794      3359
+   macro avg     0.4432    0.7640    0.5215      3359
+weighted avg     0.4521    0.8794    0.5675      3359
+--------------------------------------------------------------------------------
+07.02.2025 - 14:30:48
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=novelty_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 2
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 2.2484612464904785 seconds
+NB (computation): 0.015016317367553711 seconds
+SVM (computation): 62.90242266654968 seconds
+transform (size: (492, 30250)): 0.054917335510253906 seconds
+--------------------------------------------------------------------------------
+SVM - mean 7:
+               precision    recall  f1-score   support
+
+      benign     0.2151    1.0000    0.3541       928
+      gafgyt     0.3000    0.1000    0.1500       178
+    gonnacry     0.3000    0.1000    0.1500      1249
+       mirai     0.3000    0.1000    0.1500      1249
+      trojan     1.0000    0.1000    0.1818       714
+
+    accuracy                         0.8158      4318
+   macro avg     0.4230    0.2802    0.1972      4318
+weighted avg     0.3916    0.8158    0.2326      4318
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+07.02.2025 - 15:00:13
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=packer_identification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 8
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 10.206930160522461 seconds
+NB (computation): 0.007866621017456055 seconds
+SVM (computation): 4.044376373291016 seconds
+transform (size: (1968, 4000)): 0.031493186950683594 seconds
+--------------------------------------------------------------------------------
+NB - mean 10:
+               precision    recall  f1-score   support
+
+  not_packed     0.7768    0.7463    0.7613       201
+      packed     0.7527    0.7827    0.7674       198
+
+    accuracy                         0.8244       399
+   macro avg     0.7648    0.7645    0.7643       399
+weighted avg     0.7649    0.7644    0.7643       399
+--------------------------------------------------------------------------------
+07.02.2025 - 15:00:13
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=packer_identification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 8
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 10.206930160522461 seconds
+NB (computation): 0.007866621017456055 seconds
+SVM (computation): 4.044376373291016 seconds
+transform (size: (1968, 4000)): 0.031493186950683594 seconds
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+08.02.2025 - 03:39:18
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=type_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 4
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 8.02448034286499 seconds
+NB (computation): 0.021285533905029297 seconds
+SVM (computation): 80.45666122436523 seconds
+transform (size: (984, 16000)): 0.04951834678649902 seconds
+NB - mean 7:
+               precision    recall  f1-score   support
+
+    backdoor     0.9936    0.2313    0.3778       284
+      benign     0.4934    0.9989    0.6624       926
+        ddos     0.7075    0.2253    0.3462       643
+  ransomware     1.0000    0.1967    0.3304       430
+
+    accuracy                         0.8426      2283
+   macro avg     0.7986    0.4131    0.4292      2283
+weighted avg     0.7163    0.5426    0.4794      2283
+--------------------------------------------------------------------------------
+08.02.2025 - 03:39:18
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=type_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 4
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 8.02448034286499 seconds
+NB (computation): 0.021285533905029297 seconds
+SVM (computation): 80.45666122436523 seconds
+transform (size: (984, 16000)): 0.04951834678649902 seconds
+--------------------------------------------------------------------------------
+SVM - mean 7:
+               precision    recall  f1-score   support
+
+    backdoor     1.0000    0.1151    0.2036       284
+      benign     0.4499    1.0000    0.6213       926
+        ddos     0.7227    0.1009    0.1750       643
+  ransomware     1.0000    0.0851    0.1523       430
+
+    accuracy                         0.8725      2283
+   macro avg     0.7932    0.3253    0.2880      2283
+weighted avg     0.7050    0.4725    0.3594      2283
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+07.02.2025 - 15:11:50
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=family_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 6
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 15.402718782424927 seconds
+NB (computation): 0.022497177124023438 seconds
+SVM (computation): 78.5476508140564 seconds
+transform (size: (1476, 16000)): 0.04768633842468262 seconds
+--------------------------------------------------------------------------------
+NB - mean 3:
+               precision    recall  f1-score   support
+
+      benign     0.5041    0.9990    0.6700      2174
+      gafgyt     0.5028    0.0487    0.0842       488
+    gonnacry     0.9756    0.3014    0.4648       995
+       mirai     0.7352    0.2362    0.3621       999
+      trojan     0.8275    0.3375    0.4858       674
+
+    accuracy                         0.7592      5330
+   macro avg     0.7091    0.3866    0.4154      5330
+weighted avg     0.6762    0.5592    0.5011      5330
+--------------------------------------------------------------------------------
+07.02.2025 - 15:13:59
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=family_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 8
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 25.746259689331055 seconds
+NB (computation): 0.022083282470703125 seconds
+SVM (computation): 75.04534363746643 seconds
+transform (size: (1968, 16000)): 0.06692981719970703 seconds
+--------------------------------------------------------------------------------
+SVM - mean 3:
+               precision    recall  f1-score   support
+
+      benign     0.4855    0.9975    0.6542      2174
+      gafgyt     0.6867    0.0323    0.0621       488
+    gonnacry     0.9565    0.2572    0.4085       995
+       mirai     0.7814    0.1702    0.2808       999
+      trojan     0.8972    0.3167    0.4735       674
+
+    accuracy                         0.7367      5330
+   macro avg     0.7615    0.3548    0.3758      5330
+weighted avg     0.6994    0.5367    0.4646      5330
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+08.02.2025 - 03:34:01
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=obfuscation_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 20
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 37.702728271484375 seconds
+NB (computation): 0.007936954498291016 seconds
+SVM (computation): 2.247166156768799 seconds
+transform (size: (4920, 4500)): 0.07187056541442871 seconds
+--------------------------------------------------------------------------------
+NB - mean 5:
+               precision    recall  f1-score   support
+
+antianalysis     0.7508    0.2063    0.3269       102
+     flatten     0.6126    0.1738    0.2743       104
+      opaque     0.4200    0.1705    0.2488        93
+       split     0.8621    0.1784    0.2967       101
+         upx     0.5226    0.9822    0.6803       397
+  virtualize     0.8821    0.2725    0.4206        99
+
+    accuracy                         0.6468       896
+   macro avg     0.6750    0.3306    0.3763       896
+weighted avg     0.6264    0.5468    0.4807       896
+--------------------------------------------------------------------------------
+08.02.2025 - 03:33:20
+path_lists: lists_reduced_dataset/extracted_bd_files_lists_tagmaps=obfuscation_classification.npy
+log_file: ml_analysis/log-evaluation_reduced_dataset.txt
+model_lda: None
+model_svm: None
+model_nb: None
+means: [2, 3, 4, 5, 6, 7, 9, 10]
+nb_of_bd: 18
+path_acc: acc_stft_reduced_dataset/
+time_limit: 1.0
+metric: nicv_max
+--------------------------------------------------------------------------------
+LDA (compuation): 31.640674114227295 seconds
+NB (computation): 0.008020877838134766 seconds
+SVM (computation): 2.719113826751709 seconds
+transform (size: (4428, 4500)): 0.043567657470703125 seconds
+--------------------------------------------------------------------------------
+SVM - mean 7:
+               precision    recall  f1-score   support
+
+antianalysis     0.9431    0.1844    0.3091        73
+     flatten     0.8200    0.1281    0.2205        74
+      opaque     0.5200    0.0499    0.0863        67
+       split     0.9200    0.1450    0.2495        72
+         upx     0.5012    0.9970    0.6683       284
+  virtualize     1.0000    0.2735    0.4345        71
+
+    accuracy                         0.7364       641
+   macro avg     0.7874    0.2963    0.3280       641
+weighted avg     0.6948    0.5364    0.4463       641
+--------------------------------------------------------------------------------

@@ -1,0 +1,16 @@
+gonnacry,not_packed,3
+gonnacry-Camellia-256-CBC,not_packed,3
+gonnacry_camilla_CBC_upx,packed,3
+gonnacry_upx,packed,3
+gafgyt-variante1,not_packed,3
+gafgyt-variante2,not_packed,3
+gafgyt_1_upx,packed,3
+gafgyt_2_upx,packed,3
+mirai-dbg,not_packed,3
+mirai-variante-1,not_packed,3
+mirai_dbg_upx,packed,3
+mirai_upx,packed,3
+trojan-variante-1,not_packed,3
+trojan-variante-2,not_packed,3
+trojan_1_upx,packed,3
+trojan_2_upx,packed,3

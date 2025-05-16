@@ -59,10 +59,7 @@ Este flujo permite usar trazas sin preprocesar y entrenar modelos personalizados
 ./run_dl_on_reduced_dataset.sh ./lists_reduced_dataset/ ./acc_stft_reduced_dataset/ cnn 100 100
 ```
 
-Los modelos se guardarán como .jl (ML) o .h5 (DL), y los logs de validación se almacenarán en:
-
-- ml_analysis/log-evaluation_reduced_dataset.txt
-- training_log_reduced_dataset_{mlp,cnn}.txt
+Los modelos entrenados se guardarán como .jl (ML) o .h5 (DL).
 
 > **Nota:** El conjunto de trazas EM en crudo es una versión reducida del total capturado. Por limitaciones de almacenamiento, no ha sido posible incluir el dataset completo (~200 GB). Esto puede afectar la capacidad de generalización y precisión de los modelos entrenados.
 

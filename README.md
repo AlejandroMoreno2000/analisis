@@ -25,7 +25,7 @@ Contenido:
 
 Las trazas electromagnéticas utilizadas por este sistema fueron generadas a partir de los binarios incluidos en el siguiente repositorio:
 
-🔗 [Repositorio de muestras de malware y goodware](https://github.com/AlejandroMoreno2000/muestras-em)
+🔗 [Repositorio de muestras de malware y goodware](https://github.com/AlejandroMoreno2000/dataset/)
 
 Este conjunto está estructurado y etiquetado para alinearse con los esquemas de clasificación implementados en esta herramienta.
 

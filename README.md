@@ -21,6 +21,14 @@ Contenido:
 - lists_reduced_dataset.7z: Índices y etiquetas de trazas EM sin procesar (previas al filtrado de bandas).
 - acc_stft_reduced_dataset.7z: Acumuladores precomputados necesarios para aplicar STFT.
 
+## Repositorio de muestras
+
+Las trazas electromagnéticas utilizadas por este sistema fueron generadas a partir de los binarios incluidos en el siguiente repositorio:
+
+🔗 [Repositorio de muestras de malware y goodware](https://github.com/AlejandroMoreno2000/muestras-em)
+
+Este conjunto está estructurado y etiquetado para alinearse con los esquemas de clasificación implementados en esta herramienta.
+
 ## Requisitos
 
 - Python 3.6 o superior.
@@ -62,6 +70,9 @@ Los modelos se guardarán como .jl (ML) o .h5 (DL), y los logs de validación se
 
 Este flujo utiliza trazas ya transformadas (STFT + selección de bandas relevantes), y permite validar modelos preentrenados incluidos en el repositorio.
 
+> **Importante:** Los modelos preentrenados de Deep Learning (CNN y MLP) se encuentran comprimidos por defecto.  
+> Antes de utilizarlos, es necesario descomprimirlos utilizando el ejecutable `decompress` incluido en cada directorio (`dl_analysis/pretrained_models/CNN` y `.../MLP`).  
+
 ```
 # Formato general
 ./update_lists.sh [dir. list_selected_badwidth] [dir. traces_reduced_dataset]
@@ -80,6 +91,14 @@ Este flujo utiliza trazas ya transformadas (STFT + selección de bandas relevant
 ./run_dl_on_selected_bandwidth.sh ./lists_selected_bandwidth/ ./pretrained_models/ ./acc_stft_reduced_dataset/
 ```
 
-Los resultados se almacenarán en:
-- ml_analysis/log-evaluation_selected_bandwidth.txt
-- evaluation_log_DL.txt
+## Resultados
+
+Los resultados generados por los modelos se almacenan automáticamente en archivos de log, **diferenciados según el conjunto de datos empleado** (dataset reducido o dataset con bandas seleccionadas):
+
+- Para modelos de **Machine Learning** (SVM, Naïve Bayes):
+  - `ml_analysis/log-evaluation_reduced_dataset.txt`: resultados obtenidos a partir del dataset reducido (trazas sin transformar).
+  - `ml_analysis/log-evaluation_selected_bandwidth.txt`: resultados correspondientes al dataset con bandas seleccionadas (tras aplicar STFT y filtrado).
+
+- Para modelos de **Deep Learning** (CNN / MLP):
+  - `dl_analysis/training_log_reduced_dataset_{cnn,mlp}.txt`: métricas de validación durante el entrenamiento sobre el dataset reducido.
+  - `dl_analysis/evaluation_log_DL.txt`: resultados de evaluación sobre el dataset con bandas seleccionadas, utilizando modelos preentrenados.

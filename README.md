@@ -67,9 +67,6 @@ Los modelos entrenados se guardarán como .jl (ML) o .h5 (DL).
 
 Este flujo utiliza trazas ya transformadas (STFT + selección de bandas relevantes), y permite validar modelos preentrenados incluidos en el repositorio.
 
-> **Importante:** Los modelos preentrenados de Deep Learning (CNN y MLP) se encuentran comprimidos por defecto.  
-> Antes de utilizarlos, es necesario descomprimirlos utilizando el ejecutable `decompress` incluido en cada directorio (`dl_analysis/pretrained_models/CNN` y `.../MLP`).  
-
 ```
 # Formato general
 ./update_lists.sh [dir. list_selected_badwidth] [dir. traces_reduced_dataset]
@@ -87,6 +84,8 @@ Este flujo utiliza trazas ya transformadas (STFT + selección de bandas relevant
 # Evaluar modelos de Deep Learning (CNN / MLP)
 ./run_dl_on_selected_bandwidth.sh ./lists_selected_bandwidth/ ./pretrained_models/ ./acc_stft_reduced_dataset/
 ```
+> **Importante:** Los modelos preentrenados de Deep Learning (CNN y MLP) se encuentran comprimidos por defecto.  
+> Antes de utilizarlos, es necesario descomprimirlos utilizando el ejecutable `decompress` incluido en cada directorio (`dl_analysis/pretrained_models/CNN` y `.../MLP`).  
 
 ## Resultados
 
